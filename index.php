@@ -27,7 +27,7 @@
     </a>
     <a href="movie_info.php?id=3732">
         <div class="btn">
-            Search Movie Page
+            Sample Movie Page
         </div>
     </a>
 

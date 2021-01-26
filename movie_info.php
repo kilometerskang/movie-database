@@ -80,8 +80,12 @@
         exit(1);
     }
 
-    while($row = $rs->fetch_assoc()) {
+    while ($row = $rs->fetch_assoc()) {
         $score = $row['AVG(rating)'];
+    }
+
+    if (!$score) {
+        $score = "None";
     }
 
     $rs->free();
@@ -122,9 +126,9 @@
         </tr>
     </table>
 
-    <h4>
+    <h3>
         Average Score (based on user reviews): <?php echo $score; ?>
-    </h4>
+    </h3>
 
     <h3>
         Cast

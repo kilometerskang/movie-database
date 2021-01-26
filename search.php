@@ -20,7 +20,7 @@
     </h2>
     <form action="search_results.php" method="get">
         <input type="text" name="search"><br>
-        <input type="submit">
+        <input type="submit" class="btn">
     </form>
 
 </body>

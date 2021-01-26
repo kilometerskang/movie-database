@@ -4,7 +4,9 @@ body {
 }
 
 .nav {
+    top: 0;
     background-color: rgb(164, 216, 233);
+    padding: 10px;
 }
 
 h4 {
@@ -32,10 +34,11 @@ table {
 
 th {
     background-color: rgb(164, 216, 233);
+    padding: 8px;
 }
 
 td {
-    padding: 5px;
+    padding: 8px;
 }
 
 tr:nth-child(even) {
@@ -46,11 +49,12 @@ tr:nth-child(odd) {
 }
 
 .btn {
-    padding: 5px;
+    padding: 10px;
     margin: auto;
     background-color: rgb(204, 227, 235);
     transition: 0.2s;
     border-radius: 3px;
+    font-size: 1rem;
 }
 
 .btn:hover {
@@ -61,4 +65,8 @@ tr:nth-child(odd) {
 a {
     text-decoration: none;
     color: rgb(21, 46, 131);
+}
+
+input, select {
+    font-size: 1.1rem;
 }

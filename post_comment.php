@@ -8,8 +8,10 @@
 
     $id = $_GET['id'];
 
+    $datetime = date('Y-m-d h:i:s');
+
     if (isset($_POST['name'])) {
-        $query = "INSERT INTO Review VALUES ('{$_POST['name']}', '{$_POST['time']}', '{$_GET['id']}', '{$_POST['rating']}', '{$_POST['comment']}')";
+        $query = "INSERT INTO Review VALUES ('{$_POST['name']}', '{$datetime}', '{$_GET['id']}', '{$_POST['rating']}', '{$_POST['comment']}')";
         $db->query($query);
 
         header("Location: movie_info.php?id=$id");

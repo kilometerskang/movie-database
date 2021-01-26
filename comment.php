@@ -17,7 +17,6 @@
 
     <form action="post_comment.php?id=<?php echo $_GET['id'];?>" method="post">
         Name: <input type="text" name="name" value="Anonymous"><br>
-        Time: <input type="text" name="time" value='<?php echo date('Y-m-d h:i:s');?>' readonly><br>
         Rating: <select name="rating">
                     <option value="1">1</option>
                     <option value="2">2</option>

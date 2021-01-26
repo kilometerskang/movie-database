@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', 'Segoe UI', arial, sans-serif;
+}
+
+.nav {
+    background-color: rgb(164, 216, 233);
+}
+
+h4 {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+h3 {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    padding: 2px;
+    text-decoration: none;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: rgb(164, 216, 233);
+}
+
+td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(226, 237, 241);
+}
+tr:nth-child(odd) {
+    background-color: rgb(204, 227, 235);
+}
+
+.btn {
+    padding: 5px;
+    margin: auto;
+    background-color: rgb(204, 227, 235);
+    transition: 0.2s;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: rgb(164, 216, 233);
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(21, 46, 131);
+}

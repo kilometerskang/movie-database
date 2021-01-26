@@ -4,14 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Movie Database Search</title>
 </head>
 
 <body>
 
-    <form action="s1_action.php" method="get">
-        Search an Actor or Movie Name: <input type="text" name="search"><br>
+    <?php
+        include 'nav.php';
+    ?>
+
+    <h2>
+        Search a Person or Movie Name!
+    </h2>
+    <form action="search_results.php" method="get">
+        <input type="text" name="search"><br>
         <input type="submit">
     </form>
 

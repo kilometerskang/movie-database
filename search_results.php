@@ -17,7 +17,7 @@
     if ($num_words == 2) {
         // try (first, last) and (last, first) for actor names.
         
-        $query = "SELECT * FROM Actor WHERE first='{$search[0]}' AND last='{$search[1]}'";
+        $query = "SELECT * FROM Actor WHERE first LIKE '%".$search[0]."%' AND last LIKE '%".$search[1]."%'";
         $rs = $db->query($query);
 
         if (!$rs) {
@@ -38,7 +38,7 @@
             $i++;
         }
 
-        $query = "SELECT * FROM Actor WHERE first='{$search[1]}' AND last='{$search[0]}'";
+        $query = "SELECT * FROM Actor WHERE first LIKE '%".$search[1]."%' AND last LIKE '%".$search[0]."%'";
         $rs = $db->query($query);
 
         if (!$rs) {
@@ -59,7 +59,7 @@
     } elseif ($num_words == 1) {
         // try first and last for actor names.
         
-        $query = "SELECT DISTINCT * FROM Actor WHERE first='{$search[0]}' OR last='{$search[0]}'";
+        $query = "SELECT DISTINCT * FROM Actor WHERE first LIKE '%".$search[0]."%' OR last LIKE '%".$search[0]."%'";
         $rs = $db->query($query);
 
         if (!$rs) {
